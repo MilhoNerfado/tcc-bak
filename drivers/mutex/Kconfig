@@ -8,11 +8,11 @@ menuconfig MUTEX
 
 if MUTEX
 
-config MUTEX_INIT_PRIORITY
-	int "Blink device drivers init priority"
-	default KERNEL_INIT_PRIORITY_DEVICE
+config RELAY_LEN
+	int "Relay length"
+	default 1
 	help
-	  Blink device drivers init priority.
+	  Bit length resolution for the mutex
 
 module = MUTEX
 module-str = mutex
