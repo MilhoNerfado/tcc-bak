@@ -1,0 +1,31 @@
+/opt/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_MAKE_PROGRAM=/opt/clion/bin/ninja/linux/x64/ninja -DBOARD=nucleo_g031k8 -G Ninja -S /home/milho/Repos/zephyr/example-application/app -B /home/milho/Repos/zephyr/example-application/app/build
+Loading Zephyr default modules (Zephyr workspace).
+-- Application: /home/milho/Repos/zephyr/example-application/app
+-- CMake version: 3.28.1
+-- Found Python3: /home/milho/zephyrproject/.venv/bin/python (found suitable version "3.12.4", minimum required is "3.8") found components: Interpreter 
+-- Cache files will be written to: /home/milho/.cache/zephyr
+-- Zephyr version: 3.7.99 (/home/milho/Repos/zephyr/zephyr)
+-- Found west (found suitable version "1.2.0", minimum required is "0.14.0")
+-- Board: nucleo_g031k8, qualifiers: stm32g031xx
+-- ZEPHYR_TOOLCHAIN_VARIANT not set, trying to locate Zephyr SDK
+-- Found host-tools: zephyr 0.16.8 (/home/milho/zephyr-sdk-0.16.8)
+-- Found toolchain: zephyr 0.16.8 (/home/milho/zephyr-sdk-0.16.8)
+-- Found Dtc: /home/milho/zephyr-sdk-0.16.8/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.6.0", minimum required is "1.4.6") 
+-- Found BOARD.dts: /home/milho/Repos/zephyr/zephyr/boards/st/nucleo_g031k8/nucleo_g031k8.dts
+-- Found devicetree overlay: /home/milho/Repos/zephyr/example-application/app/boards/nucleo_g031k8.overlay
+-- Generated zephyr.dts: /home/milho/Repos/zephyr/example-application/app/build/zephyr/zephyr.dts
+-- Generated devicetree_generated.h: /home/milho/Repos/zephyr/example-application/app/build/zephyr/include/generated/zephyr/devicetree_generated.h
+-- Including generated dts.cmake file: /home/milho/Repos/zephyr/example-application/app/build/zephyr/dts.cmake
+Parsing /home/milho/Repos/zephyr/example-application/app/Kconfig
+Loaded configuration '/home/milho/Repos/zephyr/zephyr/boards/st/nucleo_g031k8/nucleo_g031k8_defconfig'
+Merged configuration '/home/milho/Repos/zephyr/example-application/app/prj.conf'
+Configuration saved to '/home/milho/Repos/zephyr/example-application/app/build/zephyr/.config'
+Kconfig header saved to '/home/milho/Repos/zephyr/example-application/app/build/zephyr/include/generated/zephyr/autoconf.h'
+-- Found GnuLd: /home/milho/zephyr-sdk-0.16.8/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.38") 
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/milho/zephyr-sdk-0.16.8/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+-- Configuring done (2.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/milho/Repos/zephyr/example-application/app/build

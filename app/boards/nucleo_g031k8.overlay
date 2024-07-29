@@ -1,0 +1,20 @@
+/*
+ * Copyright (c) 2021 Nordic Semiconductor ASA
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/* This devicetree overlay file will be automatically picked by the Zephyr
+ * build system when building the sample for the nucleo_f302r8 board. It shows
+ * how the example-application can be built on sample boards already provided
+ * by Zephyr.
+ */
+
+/ {
+	mutex: mutex0 {
+		compatible = "mutex-gpio";
+		enable-gpios = <&gpioc 6 GPIO_ACTIVE_HIGH>;
+		clock-gpios = <&gpioa 5 GPIO_ACTIVE_HIGH>;
+		data-gpios = <&gpioa 6 GPIO_ACTIVE_HIGH>;
+		reset-gpios = <&gpioa 7 GPIO_ACTIVE_HIGH>;
+	};
+};

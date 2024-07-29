@@ -1,0 +1,21 @@
+menu "example-application (/home/milho/Repos/zephyr/example-application)"
+osource "/home/milho/Repos/zephyr/example-application/Kconfig"
+config ZEPHYR_EXAMPLE_APPLICATION_MODULE
+	bool
+	default y
+endmenu
+menu "cmsis (/home/milho/Repos/zephyr/modules/hal/cmsis)"
+osource "$(ZEPHYR_CMSIS_KCONFIG)"
+config ZEPHYR_CMSIS_MODULE
+	bool
+	default y
+endmenu
+menu "hal_nordic (/home/milho/Repos/zephyr/modules/hal/nordic)"
+osource "$(ZEPHYR_HAL_NORDIC_KCONFIG)"
+config ZEPHYR_HAL_NORDIC_MODULE
+	bool
+	default y
+endmenu
+config ZEPHYR_STM32_MODULE
+   bool
+   default y

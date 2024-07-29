@@ -1,0 +1,21 @@
+# Copyright (c) 2024 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+menuconfig MUTEX
+	bool "Mutex device drivers"
+	help
+	  This option enables the blink custom driver class.
+
+if MUTEX
+
+config MUTEX_INIT_PRIORITY
+	int "Blink device drivers init priority"
+	default KERNEL_INIT_PRIORITY_DEVICE
+	help
+	  Blink device drivers init priority.
+
+module = MUTEX
+module-str = mutex
+source "subsys/logging/Kconfig.template.log_config"
+
+endif # BLINK

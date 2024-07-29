@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "modules/cmsis/cmsis/CMSIS",
+		"source" : "/home/milho/Repos/zephyr/modules/hal/cmsis/CMSIS"
+	}
+}

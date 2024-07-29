@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "modules/example-application/drivers",
+		"source" : "/home/milho/Repos/zephyr/example-application/drivers"
+	}
+}
