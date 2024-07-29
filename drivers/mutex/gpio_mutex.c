@@ -76,7 +76,7 @@ int mutex_gpio_init(void) {
     return 0;
 }
 
-int mutex_set(uint32_t toggle) {
+int mutex_gpio_set(uint32_t toggle) {
     if (!self.is_init) {
         return -ENOEXEC;
     }
@@ -91,6 +91,10 @@ int mutex_set(uint32_t toggle) {
     gpio_pin_set_dt(&enable_gpio, 1);
     gpio_pin_set_dt(&enable_gpio, 0);
 
+    return 0;
+}
+
+int mutex_gpio_clear(void) {
     return 0;
 }
 
