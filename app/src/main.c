@@ -16,9 +16,13 @@
 #define BLINK_PERIOD_MS_MAX  1000U
 
 int main(void) {
-    printk("Zephyr Example Application %s\n", APP_VERSION_STRING);
+    int err;
 
-    printk("Use the sensor to change LED blinking period\n");
+    err = mutex_gpio_init();
+    if (err < 0) {
+        printk("ERROR: Failed to initialize mutex driver\n");
+        return -1;
+    }
 
     return 0;
 }
